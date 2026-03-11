@@ -5,7 +5,10 @@ This repository is intentionally restricted to gravity-lab assets only.
 
 ## Open in Colab
 
-- [Open Gravity Student Lab](https://colab.research.google.com/github/DTEcon/Teaching_International_Trade_PUBLIC/blob/main/gravity_student_lab_colab.ipynb)
+- Full notebook (all code visible):  
+  [Open Gravity Student Lab — Full](https://colab.research.google.com/github/DTEcon/Teaching_International_Trade_PUBLIC/blob/main/gravity_student_lab_colab.ipynb)
+- Minimal notebook (frontend-style; code hidden by default):  
+  [Open Gravity Student Lab — Minimal](https://colab.research.google.com/github/DTEcon/Teaching_International_Trade_PUBLIC/blob/main/gravity_student_lab_colab_minimal.ipynb)
 
 ## One-click student flow
 
@@ -21,6 +24,18 @@ This repository is intentionally restricted to gravity-lab assets only.
    - model metadata (`N`, formula, sample composition),
    - FE/collinearity diagnostics.
 5. Copy the generated LaTeX block if needed.
+
+## Control logic (important)
+
+- `preset_spec` is the master selector.
+- If `preset_spec` is not `Custom`, the notebook applies the preset values for:
+  - estimator,
+  - exporter/importer FE toggles,
+  - covariate list.
+- To manually set estimator/FE/covariates yourself, choose `preset_spec = Custom`.
+- Country filters use ISO3 lists:
+  - `ALL` keeps all countries,
+  - comma-separated values (e.g., `PER,NGA`) restrict the sample.
 
 ## Data used by the notebook
 
