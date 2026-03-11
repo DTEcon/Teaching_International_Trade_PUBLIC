@@ -17,7 +17,7 @@ This repository is intentionally restricted to gravity-lab assets only.
 3. Use the form cell to choose:
    - estimator (`OLS` or `PPML`),
    - one FE toggle (`include_fe`) that jointly controls exporter and importer FE,
-   - covariates via compact accordion checkbox groups (bilateral, exporter-only, importer-only),
+   - covariates via grouped checkbox sections (bilateral, exporter-only, importer-only) shown directly in the same controls menu,
    - exporter/importer country filters.
 4. Read:
    - coefficient table (clustered SE by country pair),
