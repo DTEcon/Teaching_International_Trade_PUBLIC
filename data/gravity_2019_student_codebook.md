@@ -9,11 +9,11 @@
 | trade_value | dependent_variable | Total bilateral trade flow X_ij in USD levels (Atlas aggregated to pair-year). |
 | dist | bilateral_covariate | Simple bilateral distance from CEPII (km). |
 | distw | bilateral_covariate | Population-weighted bilateral distance from CEPII (km). |
-| ln_dist | bilateral_covariate | Natural log of distw. |
+| ln_dist | bilateral_covariate | Natural log of population-weighted bilateral distance (distw). |
 | contig | bilateral_covariate | Indicator =1 if countries share a border. |
 | comlang_off | bilateral_covariate | Indicator =1 if countries share an official language. |
 | rta | bilateral_covariate | Indicator =1 if a regional trade agreement / FTA is in force. |
-| comcol | bilateral_covariate | Indicator =1 if countries had a colonial relationship. |
+| comcol | bilateral_covariate | Indicator =1 if countries had a common colonizer after 1945. |
 | comleg_posttrans | bilateral_covariate | Indicator =1 if common legal origin after transition episodes. |
 | gdp_o | exporter_covariate | Exporter GDP (current USD, CEPII source fields). |
 | gdp_d | importer_covariate | Importer GDP (current USD, CEPII source fields). |

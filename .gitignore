@@ -1,0 +1,11 @@
+# Restricted teaching content (must stay in private repo only)
+slides/
+exam*/
+admin/
+problem sets/
+TakeHomeProblemSet/
+*.solutions.*
+
+# Secrets
+.env
+*.key
